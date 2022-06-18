@@ -2,6 +2,13 @@ package com.ajiteshmadai.java8.pojo;
 
 public class Employee implements Comparable<Employee> {
     private Integer empId;
+    private String name;
+    private Double salary;
+    public Employee(Integer empId, String name, Double salary) {
+        this.empId = empId;
+        this.name = name;
+        this.salary = salary;
+    }
 
     @Override
     public String toString() {
@@ -10,14 +17,6 @@ public class Employee implements Comparable<Employee> {
                 ", name='" + name + '\'' +
                 ", salary=" + salary +
                 '}';
-    }
-
-    private String name;
-    private Double salary;
-    public Employee(Integer empId, String name, Double salary) {
-        this.empId = empId;
-        this.name = name;
-        this.salary = salary;
     }
 
     public String getName() {
